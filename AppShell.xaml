@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Aiterrainn.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Aiterrainn"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Aiterrainn">
+    <TabBar> 
+        <Tab Title="Explore"
+Icon="homeicon.png" >
+            
+    <ShellContent
+        
+        Title="Models"
+        Icon="profileicon.png"
+        ContentTemplate="{DataTemplate local:ModelsPage}"
+        Route="Models" />
+
+            <ShellContent
+    
+    Title="Collections"
+    Icon="homeicon.png"
+    ContentTemplate="{DataTemplate local:CollectionsPage}"
+    Route="Collections" />
+            <ShellContent
+    
+    Title="Likes"
+    Icon="homeicon.png"
+    ContentTemplate="{DataTemplate local:LikesPage}"
+    Route="Likes" />
+        </Tab>
+
+        <Tab Title="Search"
+Icon="searchicon.png">
+        <ShellContent
+        
+        ContentTemplate="{DataTemplate local:SearchPage}"
+        Route="Search" />
+        </Tab>
+
+        <Tab Title="Create"
+Icon="createicon.png">
+            
+            <ShellContent
+        
+        ContentTemplate="{DataTemplate local:CreatePage}"
+        Route="Create" />
+        </Tab>
+
+        <Tab Title="Community"
+Icon="communityicon.png">
+            <ShellContent
+        
+        ContentTemplate="{DataTemplate local:CommunityPage}"
+        Route="Community" />
+        </Tab>
+
+        <Tab Title="Profile"
+Icon="profileicon.png">
+            <ShellContent
+    
+    ContentTemplate="{DataTemplate local:SettingsPage}"
+    Route="Settings" />
+        </Tab>
+    </TabBar>
+
+
+</Shell>
